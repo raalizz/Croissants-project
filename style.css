@@ -1,0 +1,31 @@
+:root {
+  --main-font: "Libre Baskerville", serif;
+
+  --main-background-color: #d5c4aa;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+  font: var(--main-font);
+  background-color: var(--main-background-color);
+}
+.background {
+  background: rgba(225, 221, 221, 0.45);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+}
+.logo {
+  max-width: 80px;
+}
+.logo:hover {
+  transform: scale(1.5);
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 100px;
+}
+.gif {
+  max-width: 300%;
+}
