@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Libre Baskerville", serif;
+  --main-font: bitter;
 
   --main-background-color: #d5c4aa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -8,24 +8,47 @@ body {
   font: var(--main-font);
   background-color: var(--main-background-color);
 }
+
 .background {
   background: rgba(225, 221, 221, 0.45);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
 }
 .logo {
   max-width: 80px;
+  filter: drop-shadow(0 0 20px #121212);
 }
 .logo:hover {
   transform: scale(1.5);
 }
 h1 {
   text-align: center;
-  padding: 30px;
-  font-size: 100px;
+  padding-top: 70px;
+  font-size: 70px;
 }
-.gif {
-  max-width: 300%;
+
+.text {
+  background-color: #dbd0c1;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 20px;
+}
+.video {
+  display: block;
+  margin: 0 auto;
+}
+.signature {
+  text-align: right;
+  font-family: bitter;
+  color: #000;
+  margin-right: 20px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+@media (max-width: 900px) {
+  .signature {
+    text-align: center;
+  }
 }
