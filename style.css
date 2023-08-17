@@ -28,7 +28,12 @@ h1 {
   padding-top: 70px;
   font-size: 70px;
 }
-
+.gif {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  box-shadow: var(--box-shadow);
+}
 .text {
   background-color: #dbd0c1;
   padding: 20px;
@@ -38,6 +43,7 @@ h1 {
 .video {
   display: block;
   margin: 0 auto;
+  box-shadow: var(--box-shadow);
 }
 .signature {
   text-align: right;
@@ -51,4 +57,23 @@ h1 {
   .signature {
     text-align: center;
   }
+}
+.header {
+  margin-top: 100px;
+}
+.icon {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  padding: 0px 20px;
+  transition: all 200ms ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.5);
+}
+.email:hover {
+  text-decoration: underline;
+}
+.contact-info {
+  padding-bottom: 160px;
 }
