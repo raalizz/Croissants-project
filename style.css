@@ -73,6 +73,7 @@ h1 {
 }
 .email:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .contact-info {
   padding-bottom: 160px;
