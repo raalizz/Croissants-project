@@ -1,5 +1,5 @@
 :root {
-  --main-font: bitter;
+  --main-font: "Poppins", sans-serif;
 
   --main-background-color: #d5c4aa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -9,7 +9,7 @@
   --duration: 0.6s;
 }
 body {
-  font: var(--main-font);
+  font-family: var(--main-font);
   background-color: var(--main-background-color);
   display: flex;
   justify-content: center;

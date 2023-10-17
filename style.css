@@ -1,14 +1,67 @@
 :root {
-  --main-font: bitter;
-
+  --main-font: "Poppins", sans-serif;
   --main-background-color: #d5c4aa;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
-  font: var(--main-font);
+  font-family: var(--main-font);
   background-color: var(--main-background-color);
 }
+section {
+  padding: 100px 50px 100px 50px;
+  margin: 0 auto;
+}
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/croissants.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 190px 0;
+}
+header h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+header h1 {
+  text-align: center;
+
+  font-weight: 900;
+  font-size: 65px;
+  color: #fff;
+  line-height: 1.5;
+}
+header h3 {
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+main {
+  background-color: #fff;
+}
+.facts h2 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.facts {
+  background-color: #f8f8f8;
+}
 .background {
   background: rgba(225, 221, 221, 0.45);
   border-radius: 10px;
@@ -23,11 +76,7 @@ body {
 .logo:hover {
   transform: scale(1.5);
 }
-h1 {
-  text-align: center;
-  padding-top: 70px;
-  font-size: 70px;
-}
+
 .gif {
   display: block;
   margin: 0 auto;
