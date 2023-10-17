@@ -102,16 +102,20 @@ header h3 {
   padding-bottom: 20px;
 }
 
-.video {
+.recipe .video {
   display: block;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
 }
 
-.header {
-  margin-top: 100px;
+.contact {
+  margin-top: 50px;
 }
-.icon {
+.contact h1 {
+  text-align: center;
+}
+.contact .icon {
+  color: #64462e;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 24px;
@@ -176,4 +180,20 @@ footer .icons {
 }
 footer .icons:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 960px) {
+  footer .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  footer .grid p {
+    font-size: 15px;
+  }
+  footer .grid li {
+    font-size: 15px;
+  }
+  .recipe .video {
+    width: 100%;
+  }
 }
