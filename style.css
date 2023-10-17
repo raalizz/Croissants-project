@@ -12,6 +12,28 @@ section {
   margin: 0 auto;
 }
 
+.background {
+  background: rgba(225, 221, 221, 0.45);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+}
+.logo {
+  max-width: 80px;
+  filter: drop-shadow(0 0 20px #121212);
+}
+.logo:hover {
+  transform: scale(1.5);
+}
+
+.gif {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  box-shadow: var(--box-shadow);
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("images/croissants.gif");
@@ -44,10 +66,6 @@ header h3 {
   font-weight: 100;
   font-size: 25px;
 }
-
-main {
-  background-color: #fff;
-}
 .facts h2 {
   text-align: center;
   font-size: 25px;
@@ -62,51 +80,34 @@ main {
 .facts {
   background-color: #f8f8f8;
 }
-.background {
-  background: rgba(225, 221, 221, 0.45);
-  border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
-}
-.logo {
-  max-width: 80px;
-  filter: drop-shadow(0 0 20px #121212);
-}
-.logo:hover {
-  transform: scale(1.5);
-}
-
-.gif {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  box-shadow: var(--box-shadow);
-}
 .text {
   background-color: #dbd0c1;
   padding: 20px;
   border-radius: 10px;
   line-height: 20px;
 }
+
+.recipe {
+  background-color: #fff;
+}
+.recipe h3 {
+  text-align: center;
+  font-size: 25px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 .video {
   display: block;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
 }
-.signature {
-  text-align: right;
-  font-family: bitter;
-  color: #000;
-  margin-right: 20px;
-  font-size: 12px;
-  margin-bottom: 5px;
-}
-@media (max-width: 900px) {
-  .signature {
-    text-align: center;
-  }
-}
+
 .header {
   margin-top: 100px;
 }
@@ -126,4 +127,53 @@ main {
 }
 .contact-info {
   padding-bottom: 160px;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+}
+
+footer {
+  color: #000;
+  background-image: linear-gradient(
+      rgba(213, 196, 170, 0.9),
+      rgba(213, 196, 170, 0.9)
+    ),
+    url(images/footer\ pic.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer p {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+footer li {
+  list-style: none;
+  margin-left: -40px;
+  line-height: 24px;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+footer .links {
+  color: #64462e;
+  opacity: 30;
+}
+footer .links:hover {
+  text-decoration: underline;
+}
+footer .icons {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 0 7px;
+  transition: all 200ms ease-in-out;
+}
+footer .icons:hover {
+  transform: scale(1.2);
 }
